@@ -1,0 +1,33 @@
+.container {
+  background-color: rgb(30, 189, 8);
+  margin: auto;
+  width: 93%;
+}
+.title {
+  display: block;
+  font-size: 1, 5rem;
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+}
+table,
+td,
+th {
+  border: 1px solid rebeccapurple;
+  border-collapse: collapse;
+}
+table {
+  width: 100%;
+}
+th,
+td {
+  padding: 6px;
+}
+th {
+  background-color: blue;
+}
+.grandtotal {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 30px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/ex1.css" />
+    <title>Product</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="producrt">
+        <div class="title">Danh Sách Sản Phẩm</div>
+        <table class="product">
+          <thead>
+            <tr>
+              <th>Mã</th>
+              <th>Tên Sản Phẩm</th>
+              <th>Gía</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Ốc Nhồi</td>
+              <td><span class="amount">100.000</span>vnđ</td>
+              <td>
+                <button type="button" onclick="arttocard(this)">Thêm</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mỹ Phẩm</td>
+              <td><span class="amount">600.000</span>vnđ</td>
+              <td>
+                <button type="button" onclick="arttocard(this)">Thêm</button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Ong nội</td>
+              <td><span class="amount">300.000</span>vnđ</td>
+              <td>
+                <button type="button" onclick="arttocard(this)">Thêm</button>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Sâm Hàn Quốc</td>
+              <td><span class="amount">1.300.000</span>vnđ</td>
+              <td>
+                <button type="button" onclick="arttocard(this)">Thêm</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr />
+      <div class="shopping-cart">
+        <div class="title">Giỏ Hàng</div>
+        <table id="cartitem" class="cart-item" style="display: none">
+          <thead>
+            <tr>
+              <th>Mã</th>
+              <th>Tên</th>
+              <th>Gía</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody id="cart-body"></tbody>
+        </table>
+        <div id="grandtotal" class="grandtotal" style="display: none">
+          tong tien : <span id="total">1.900.000 vnđ</span>
+        </div>
+        <div id="emptycart" class="emtycart">Bạn Chưa Chọn Mặt Hàng Nào</div>
+      </div>
+    </div>
+
+    <script src="ex1.js"></script>
+  </body>
+</html>
